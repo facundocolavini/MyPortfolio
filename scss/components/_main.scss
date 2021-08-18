@@ -1,0 +1,168 @@
+.main{
+    background: #f3f2f1;
+}
+
+.about-me{
+  
+    padding: 4em;
+
+    figure{
+        margin: 0 auto;
+        max-width: 150px;
+        padding-bottom: 2em;
+        margin-bottom: 10px;
+        .user-image{
+            @include user-image;
+        }
+    }
+             /*Tipografia para mobiles small to L*/
+             @media (max-width: 399px) and (min-width: 300px){
+              
+                h3{
+                     @include mobile-s-h;
+                 }
+                 p{
+                     @include mobile-s-p;
+                 }
+             }
+             /*Tipografia para Mobile small*/
+             @media (max-width: 767px) and (min-width:400px ){
+                 h3{
+                     @include mobile-m-l-h;
+                 }
+                 p{
+                     @include mobile-m-l-p
+                 }
+                 
+             }
+             /*Tablets*/
+             @media  (min-width:768px) and (max-width: 991px){
+                 h3{
+                     @include tablet-h;
+                 }
+                 p{
+                     @include tablet-p;
+                 }
+             }
+             /*Escritorio*/
+             @include media(desktop-s){
+                 h3{
+                     @include desktop-h;
+                 }
+ 
+                 p{
+                     @include desktop-p;
+                 }
+             }
+   
+    .line{
+        @include separator;
+    }
+}
+
+.skills{
+    padding: 7em 0;
+}
+.what-i-do{
+ 
+    h1{
+        @media (max-width: 767px) and (min-width: 300px){
+            font-size: 1.5em;
+        }
+        padding: 2em 0;
+        font-size: $font-size-p;
+        font-size: $font-size-h;
+        color:#5c67a7;
+    }
+    .design{
+        margin: 3em 0;
+        text-align: center;
+
+        .design__content{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            .design__content-info{
+                max-width: 200px;
+                position: relative;
+               
+                figure{
+                    margin: 0 auto;
+                    width: 200px;
+                    img{
+                    text-align: center;
+                    align-items: center;
+                    width: 100%;
+                    background: #f3f2f1;
+                    
+                    }
+                }
+                .design__content-icon{
+                    background:transparent;
+                    border-radius: 10px;
+                    width: 77;
+                    height: 77px;
+                    position: absolute;
+                    left: 80%;
+                    background-position: center;
+                    overflow: hidden;
+                    top: 1.6em;
+                    .icons-tec{ 
+                        @include image-vert-animation($image-tec-animation,77px,77px,$anim-duration-mov-down,$animation-mov-down);
+                    }
+                }
+            }
+        }
+    }
+
+    .develop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin: 3em 0;
+        text-align: center;
+        .develop__content-info{
+ 
+            figure{
+                margin: 0 auto;
+                width: 230px;
+                img{
+                    text-align: center;
+                    align-items: center;
+                    width: 100%;
+                    background: #f3f2f1;
+                }
+            }
+            .develop-animation-icon{
+                display:flex;
+                background:transparent;
+                border-radius:0;
+                width: 77;
+                height: 77px;
+                position: absolute;
+                left: 28%;
+                margin: 0 auto;
+                background-position: center;
+                overflow: hidden;
+                top: .6em;
+
+                .icons-dev{
+              
+                    justify-content: center;
+                    align-items: center;
+                    @include image-vert-animation($image-dev-animation,77px,67px,$anim-duration-mov-down,$animation-mov-down);
+
+                }   
+            }
+        }
+    }
+}
+
+
+
+
+
+

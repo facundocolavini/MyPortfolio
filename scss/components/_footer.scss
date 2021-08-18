@@ -1,0 +1,47 @@
+.footer{
+    background: $background-page;
+    padding: 2em 0;
+    .row{
+        margin :0;
+    }
+    p{
+        padding: 2.5em 0;
+        font-size: .95em;
+        font-weight:600;
+        font-family: $basefont;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+        color:$color-btn-f;
+        
+    }
+}
+
+.social{
+    display: flex;
+    padding:   2em 0;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    li{
+        list-style: none;
+        margin: 0px auto;
+        a{
+            height: 50px;
+            width: 50px;
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+ 

@@ -1,0 +1,1270 @@
+/*------------------------------------*\
+    $STYLE
+\*------------------------------------*/
+/**
+ * Let's define the settings file here, or the partials to be included.
+ * This way we can have different .css files compiled with different partials each.
+ */
+/*------------------------------------*\
+    $PARTIALS
+\*------------------------------------*/
+/*
+ * Scss Libraries, mixins, functions and any Scss focused logic
+*/
+/*------Font Definition------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+/*------Colors---------*/
+/*--------Constantes--------*/
+/*mobile s titulos*/
+/*mobile s parrafos*/
+/*mobile m l titulos */
+/*mobile m l parrafos*/
+/*Tablet titulos*/
+/*Tablet parrafos*/
+/*Desktop titulos*/
+/*Desktop parrafos*/
+/* Media Queries Mixin
+**********************/
+/*Mixin para tipografia responsive*/
+/*Mobile s parrafos*/
+/*Mobile m y l titulos*/
+/*Breakpoints */
+@media (max-width: 768px) and (min-width: 300px) {
+  .header {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+  .container {
+    padding-right: auto;
+    padding-left: auto; }
+  .row {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center; } }
+
+/*Tablets*/
+@media only screen and (min-width: 768px) {
+  .design .col-md-6 {
+    flex: none;
+    max-width: none; }
+  .design .col-md-4 {
+    flex: none;
+    max-width: 100%; }
+  .develop .col-md-4 {
+    flex: none;
+    max-width: none; }
+  .develop .col-md-8 {
+    flex: none;
+    max-width: 100%; }
+  .project .col-md-push {
+    left: 50%; }
+  .project .col-md-pull {
+    right: 50%; }
+  .project .col-md-4 {
+    flex: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px; }
+  .project .col-md-8 {
+    flex: none;
+    /*  max-width: 100%; */ } }
+
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+  .design .col-md-4 {
+    padding: 1em 0 0 3em;
+    /*             margin-left: 6em; */
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .design .col-md-6 {
+    padding: 0 0 0 3em;
+    margin: 0 auto;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .develop .col-md-4 {
+    padding: 0 0 0 3em;
+    margin: 0 auto;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .develop .col-md-8 {
+    padding: 1em 0 0 3em;
+    margin-left: 6em;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .develop .col-md-push {
+    left: 50%; }
+  .develop .col-md-pull {
+    right: 50%; }
+  .project .col-md-push {
+    left: 50%; }
+  .project .col-md-pull {
+    right: 50%; } }
+
+/*Tipografia para mobiles small to L*/
+@media (max-width: 399px) and (min-width: 300px) {
+  .works-description h3, .design-description h3, .develop-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7; }
+  .works-description p, .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7; } }
+
+/*Tipografia para Mobile small*/
+@media (max-width: 767px) and (min-width: 400px) {
+  .works-description h3, .design-description h3, .develop-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7; }
+  .works-description p, .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7; } }
+
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .works-description h3, .design-description h3, .develop-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7; }
+  .works-description p, .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8; } }
+
+/*Escritorio*/
+@media only screen and (min-width: 992px) {
+  .works-description h3, .design-description h3, .develop-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7; }
+  .works-description p, .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7; } }
+
+@keyframes move-down {
+  0% {
+    background-position: 0 0; }
+  5% {
+    background-position: 0 77px; }
+  35% {
+    background-position: 0 77px; }
+  40% {
+    background-position: 0 154px; }
+  68% {
+    background-position: 0 154px; }
+  73% {
+    background-position: 0 231px; }
+  100% {
+    background-position: 0 231px; } }
+
+/*Styleguide*/
+* {
+  margin: 0;
+  box-sizing: content-box;
+  padding: 0; }
+
+.container {
+  overflow-x: hidden; }
+
+/*
+* Componets used for layouts, headers, articles, etc...
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+nav {
+  height: 10vh;
+  background: url("../images/wood_1.png");
+  z-index: 1; }
+
+.nav-links {
+  position: sticky;
+  display: flex;
+  list-style: none;
+  width: 65%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 2em; }
+
+.nav-links li a:hover {
+  color: #536dfe83; }
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 1;
+  padding-right: 1em;
+  margin-right: 2em; }
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
+  color: #ae5fce; }
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px; }
+  nav {
+    position: relative; }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2; }
+  .nav-links {
+    position: fixed;
+    background: #536dfe;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -30%);
+    -webkit-clip-path: circle(100px at 90% -30%);
+    transition: all 1s ease-out;
+    pointer-events: none; }
+  .nav-links.open {
+    clip-path: circle(1210px at 90% -20%);
+    -webkit-clip-path: circle(1210px at 90% -20%);
+    pointer-events: all; }
+  .landing {
+    flex-direction: column; }
+  .nav-links li {
+    opacity: 0; }
+  .nav-links li a {
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 0; }
+  .nav-links li a:hover {
+    color: rgba(0, 0, 0, 0.658); }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+    opacity: 1; }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+    opacity: 1; }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+    opacity: 1; }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+    opacity: 1; }
+  li.fade {
+    opacity: 1; } }
+
+.footer {
+  background: url("../images/wood_1.png");
+  padding: 2em 0; }
+  .footer .row {
+    margin: 0; }
+  .footer p {
+    padding: 2.5em 0;
+    font-size: .95em;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0;
+    color: #fff; }
+  .footer a {
+    text-decoration: none;
+    color: #536DFE; }
+
+.social {
+  display: flex;
+  padding: 2em 0;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .social li {
+    list-style: none;
+    margin: 0px auto; }
+    .social li a {
+      height: 50px;
+      width: 50px; }
+      .social li a img {
+        height: 50px;
+        width: 50px; }
+
+.contact-links {
+  background: url("../images/wood_1.png"); }
+
+/*Col de enlaces*/
+.links {
+  /*---Responsive----*/
+  padding: 25px; }
+  @media only screen and (min-width: 992px) {
+    .links {
+      text-align: left; } }
+  .links h3 {
+    color: white; }
+  .links__nav {
+    list-style: none;
+    margin: 5px;
+    padding: 0; }
+    .links__nav li {
+      padding: 5px; }
+      .links__nav li a {
+        color: white;
+        text-decoration: none; }
+  .links a:hover {
+    color: #536DFE; }
+
+/*Col de contacto*/
+.contact {
+  padding: 25px;
+  position: relative;
+  text-align: center; }
+  @media only screen and (min-width: 992px) {
+    .contact {
+      text-align: right; } }
+  .contact h3 {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    /*---Responsive----*/ }
+    @media only screen and (min-width: 992px) {
+      .contact h3 {
+        text-align: right; } }
+  .contact .contact__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px  grey  .1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    position: relative;
+    text-align: center;
+    border: 0;
+    width: 150px;
+    color: black;
+    padding-left: 45px;
+    height: 50px;
+    align-items: center;
+    padding-top: 0.7em;
+    padding-right: .9em; }
+    .contact .contact__button .email {
+      position: absolute;
+      text-align: center;
+      top: 27%;
+      left: 15%;
+      bottom: 0;
+      height: 25px;
+      width: 20px;
+      background-image: url("../icons/mail.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .contact__button:hover {
+    background-color: #536dfea1;
+    color: rgba(0, 0, 0, 0.877);
+    text-shadow: none;
+    outline: none; }
+
+.main {
+  background: #f3f2f1; }
+
+.about-me {
+  padding: 4em;
+  /*Tipografia para mobiles small to L*/
+  /*Tipografia para Mobile small*/
+  /*Tablets*/
+  /*Escritorio*/ }
+  .about-me figure {
+    margin: 0 auto;
+    max-width: 150px;
+    padding-bottom: 2em;
+    margin-bottom: 10px; }
+    .about-me figure .user-image {
+      width: 130px;
+      background: #8D8BDB;
+      border-radius: 1000px;
+      box-shadow: 2px 1px 2px 0; }
+  @media (max-width: 399px) and (min-width: 300px) {
+    .about-me h3 {
+      font-size: 1.5em;
+      padding-bottom: 1rem;
+      padding-top: 1em;
+      font-weight: 500;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      color: #5c67a7; }
+    .about-me p {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.7; } }
+  @media (max-width: 767px) and (min-width: 400px) {
+    .about-me h3 {
+      font-size: 1.5em;
+      padding-bottom: 0.1em;
+      padding-top: 1.1em;
+      font-weight: 500;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      color: #5c67a7; }
+    .about-me p {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.7; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about-me h3 {
+      font-size: 1.8em;
+      padding-bottom: 0.1em;
+      padding-top: 1em;
+      font-weight: 500;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      color: #5c67a7; }
+    .about-me p {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.8; } }
+  @media only screen and (min-width: 992px) {
+    .about-me h3 {
+      font-size: 1.8em;
+      padding-bottom: 0.1em;
+      text-align: left;
+      font-weight: 500;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      color: #5c67a7; }
+    .about-me p {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.3em;
+      text-align: left;
+      font-weight: 300;
+      color: #545454;
+      line-height: 1.7; } }
+  .about-me .line {
+    position: relative;
+    border: 2px solid grey;
+    opacity: 0.20;
+    width: 10em;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    top: 2em;
+    line-height: 1.7;
+    box-shadow: 2px 2px 2px black; }
+
+.skills {
+  padding: 7em 0; }
+
+.what-i-do h1 {
+  padding: 2em 0;
+  font-size: 1.6em;
+  font-size: 3em;
+  color: #5c67a7; }
+  @media (max-width: 767px) and (min-width: 300px) {
+    .what-i-do h1 {
+      font-size: 1.5em; } }
+
+.what-i-do .design {
+  margin: 3em 0;
+  text-align: center; }
+  .what-i-do .design .design__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    .what-i-do .design .design__content .design__content-info {
+      max-width: 200px;
+      position: relative; }
+      .what-i-do .design .design__content .design__content-info figure {
+        margin: 0 auto;
+        width: 200px; }
+        .what-i-do .design .design__content .design__content-info figure img {
+          text-align: center;
+          align-items: center;
+          width: 100%;
+          background: #f3f2f1; }
+      .what-i-do .design .design__content .design__content-info .design__content-icon {
+        background: transparent;
+        border-radius: 10px;
+        width: 77;
+        height: 77px;
+        position: absolute;
+        left: 80%;
+        background-position: center;
+        overflow: hidden;
+        top: 1.6em; }
+        .what-i-do .design .design__content .design__content-info .design__content-icon .icons-tec {
+          position: relative;
+          animation: move-down;
+          animation-duration: 12s;
+          animation-iteration-count: infinite;
+          animation-timing-function: cubic-bezier(12, 0, 0, 11);
+          width: 77px;
+          height: 77px;
+          background-position: center;
+          background-image: url("../icons/design-icons-vertig.png");
+          object-fit: contain;
+          background-size: cover; }
+
+.what-i-do .develop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin: 3em 0;
+  text-align: center; }
+  .what-i-do .develop .develop__content-info figure {
+    margin: 0 auto;
+    width: 230px; }
+    .what-i-do .develop .develop__content-info figure img {
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      background: #f3f2f1; }
+  .what-i-do .develop .develop__content-info .develop-animation-icon {
+    display: flex;
+    background: transparent;
+    border-radius: 0;
+    width: 77;
+    height: 77px;
+    position: absolute;
+    left: 28%;
+    margin: 0 auto;
+    background-position: center;
+    overflow: hidden;
+    top: .6em; }
+    .what-i-do .develop .develop__content-info .develop-animation-icon .icons-dev {
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: move-down;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(12, 0, 0, 11);
+      width: 77px;
+      height: 67px;
+      background-position: center;
+      background-image: url("../icons/dev-icons-vert.png");
+      object-fit: contain;
+      background-size: cover; }
+
+.night {
+  overflow: hidden;
+  background: url("../images/wood_1.png"); }
+  .night img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-size: contain;
+    background-position: center; }
+
+.hero {
+  background: url("../images/wood_1.png"); }
+
+.im-facundo {
+  width: 100%;
+  padding: .5em 0 0;
+  position: relative;
+  color: #8280D8;
+  text-align: center;
+  line-height: 3em; }
+  .im-facundo h1 {
+    padding: .5em 0 0;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 600;
+    font-size: 4em;
+    color: #536dfeb8;
+    overflow: hidden; }
+  .im-facundo h4 {
+    padding: .5em 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 150%;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    color: #536dfeb8; }
+
+.works {
+  overflow: hidden;
+  background: #1F1F1F;
+  transform: translateZ(0);
+  color: #5c67a7; }
+  .works h3 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 500;
+    padding: 2em 0; }
+  .works p {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.4em; }
+
+#portfolio {
+  /*     height: 1000px; */ }
+  #portfolio .container-fluid {
+    max-width: 1920px; }
+    #portfolio .container-fluid .portfolio-box {
+      position: relative;
+      display: block; }
+      #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        opacity: 0;
+        color: white;
+        background: rgba(92, 103, 167, 0.9);
+        transition: opacity 0.25s ease;
+        text-align: center; }
+        #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+          font-family: "Poppins", sans-serif;
+          font-size: 0.85rem;
+          font-weight: 600;
+          text-transform: uppercase; }
+        #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+          font-size: 1.2rem; }
+      #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+        opacity: 1; }
+
+.project {
+  margin: 0 auto; }
+  .project .container {
+    margin-left: 0 auto; }
+    .project .container .row {
+      margin: 0 auto; }
+      .project .container .row .intro {
+        object-fit: cover; }
+        .project .container .row .intro__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          background-size: contain;
+          background-position: center; }
+    .project .container .projects-descriptions {
+      background: #f3f2f1;
+      box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+      text-align: center;
+      font-family: "Poppins", sans-serif; }
+      .project .container .projects-descriptions p {
+        font-family: "Poppins", sans-serif; }
+
+/*Tipografia para mobiles small to L - section projects*/
+@media (max-width: 399px) and (min-width: 300px) {
+  .title h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    line-height: 1;
+    font-size: 2.5em;
+    padding-bottom: 1.0em; }
+    .title h3 strong {
+      display: block;
+      font-weight: 700; }
+  .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.2em;
+    text-align: left;
+    background: #536dfe;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    color: black; }
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    padding: 15px;
+    color: black; }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0; }
+    .projects-descriptions .list-technology li {
+      list-style: none;
+      padding: 5px; }
+      .projects-descriptions .list-technology li img {
+        height: 36px;
+        width: 36px; }
+  .projects-descriptions .p__subtitle p {
+    font-family: "Poppins", sans-serif;
+    text-align: left; }
+  .projects-descriptions p {
+    padding: 15px; }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.2em;
+    color: black;
+    width: 100%;
+    font-weight: 400; }
+    .projects-descriptions__box .p__subtitle p span {
+      display: block;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.7;
+      font-size: 1rem;
+      text-align: left;
+      font-weight: 50;
+      color: black; }
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px  grey  .1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: right;
+    height: 60px;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-right: .9em; }
+    .works-button .works-button:hover {
+      background-color: #536dfea1;
+      color: rgba(0, 0, 0, 0.877);
+      text-shadow: none;
+      outline: none; }
+    .works-button .icon-git {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-image: url("/icons/github.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .works-button .icon-project {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("/icons/link.svg"); } }
+
+/*Tipografia para Mobile small - section projects*/
+@media (max-width: 767px) and (min-width: 400px) {
+  .title h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    line-height: 1;
+    font-size: 2.5em;
+    padding-bottom: 1.0em; }
+    .title h3 strong {
+      display: block;
+      font-weight: 700; }
+  .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.5em;
+    text-align: left;
+    background: #536dfe;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    padding-left: 15px;
+    color: black; }
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    padding: 15px;
+    color: black; }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0; }
+    .projects-descriptions .list-technology li {
+      list-style: none;
+      padding: 5px; }
+      .projects-descriptions .list-technology li img {
+        height: 50px;
+        width: 50px; }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.7em;
+    color: black;
+    width: 100%;
+    font-weight: 400; }
+    .projects-descriptions__box .p__subtitle p span {
+      display: block;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.7;
+      font-size: 1.2rem;
+      text-align: left;
+      font-weight: 400;
+      color: black; }
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px  grey  .1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: right;
+    height: 60px;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-right: .9em; }
+    .works-button .works-button:hover {
+      background-color: #536dfea1;
+      color: rgba(0, 0, 0, 0.877);
+      text-shadow: none;
+      outline: none; }
+    .works-button .icon-git {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-image: url("/icons/github.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .works-button .icon-project {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("/icons/link.svg"); } }
+
+/*Tablets - section projects*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .title h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    text-align: left;
+    padding-top: 0;
+    font-size: 2em; }
+    .title h3 strong {
+      display: block;
+      font-weight: 700; }
+  .p__subtitle {
+    padding-top: 2em; }
+    .p__subtitle p {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.8;
+      font-size: 1.5em;
+      text-align: left;
+      background: #536dfe;
+      padding: 1px;
+      font-weight: 500;
+      padding-left: 15px;
+      box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+      color: black; }
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+    padding: 15px;
+    color: black;
+    text-align: left; }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.5em;
+    color: black;
+    width: 100%;
+    font-weight: 500; }
+    .projects-descriptions__box .p__subtitle p span {
+      display: block;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.7;
+      font-size: 1.2rem;
+      text-align: left;
+      font-weight: 400;
+      color: black; }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0; }
+    .projects-descriptions .list-technology li {
+      list-style: none;
+      padding: 15px; }
+      .projects-descriptions .list-technology li img {
+        height: 50px;
+        width: 50px; }
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px  grey  .1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: right;
+    height: 60px;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-right: .9em; }
+    .works-button .works-button:hover {
+      background-color: #536dfea1;
+      color: rgba(0, 0, 0, 0.877);
+      text-shadow: none;
+      outline: none; }
+    .works-button .icon-git {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-image: url("/icons/github.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .works-button .icon-project {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("/icons/link.svg"); } }
+
+/*Escritorio - section projects*/
+@media only screen and (min-width: 992px) {
+  .title h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    text-align: left;
+    font-size: 3em;
+    padding-right: 4em;
+    align-self: center;
+    width: auto; }
+    .title h3 strong {
+      display: block;
+      font-weight: 700; }
+  .p__subtitle {
+    padding-top: 2em;
+    margin: 0 auto; }
+    .p__subtitle p {
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.3em;
+      text-align: left;
+      font-weight: 300;
+      color: #545454;
+      line-height: 1.7;
+      font-size: 2em;
+      text-align: left;
+      background: #536dfe;
+      padding-left: 15px;
+      font-weight: 500;
+      box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+      color: black; }
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+    padding: 15px;
+    color: black; }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 2em;
+    color: black;
+    width: 100%;
+    font-weight: 500; }
+    .projects-descriptions__box .p__subtitle p span {
+      display: block;
+      margin: 0 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 400;
+      color: #545454;
+      line-height: 1.7;
+      font-size: 1.3rem;
+      text-align: left;
+      font-weight: 300;
+      color: black; }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0; }
+    .projects-descriptions .list-technology li {
+      list-style: none;
+      padding: 15px; }
+      .projects-descriptions .list-technology li img {
+        height: 50px;
+        width: 50px; }
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px  grey  .1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: right;
+    height: 60px;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-right: .9em; }
+    .works-button .works-button:hover {
+      background-color: #536dfea1;
+      color: rgba(0, 0, 0, 0.877);
+      text-shadow: none;
+      outline: none; }
+    .works-button .icon-git {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-image: url("/icons/github.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .works-button .icon-project {
+      position: absolute;
+      text-align: center;
+      top: 8%;
+      left: 5%;
+      bottom: 10%;
+      height: 50px;
+      width: 50px;
+      padding: 1em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("/icons/link.svg"); } }
+
+.works-button:hover {
+  background-color: #536dfea1;
+  color: rgba(0, 0, 0, 0.877);
+  text-shadow: none;
+  outline: none; }

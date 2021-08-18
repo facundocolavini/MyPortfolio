@@ -1,0 +1,161 @@
+/*Breakpoints */
+@media (max-width: 768px) and (min-width: 300px){
+    .header{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .container{
+        padding-right: auto;
+        padding-left: auto;
+    }
+    .row{
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+/*Tablets*/
+@include media (tablet){
+ 
+    .design{
+        .col-md-6 {
+            flex:none;
+            max-width: none;
+        }
+        .col-md-4{
+            flex:none;
+            max-width: 100%;
+        }
+    }
+
+    .develop{        
+        .col-md-4{
+            flex:none;
+            max-width: none;
+        }
+        .col-md-8{
+            flex:none;
+            max-width: 100%;
+        }   
+    }
+
+    .project{
+        .col-md-push{
+            left:50%;
+
+        }
+        .col-md-pull{
+            right: 50%;
+             
+        }
+        .col-md-4 {
+            flex:none;
+            box-shadow: $box-s;
+        }
+        .col-md-8{
+            flex:none;
+           
+           /*  max-width: 100%; */
+        }
+    }
+}
+
+
+/*Desktop*/
+@include media (desktop-s){
+    .design{
+        .col-md-4{
+            padding: 1em 0 0 3em;
+/*             margin-left: 6em; */
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        .col-md-6 {
+            padding: 0 0 0 3em;
+            margin: 0 auto;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    .develop{        
+        .col-md-4{
+            padding: 0 0 0 3em;
+            margin: 0 auto;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .col-md-8{
+            padding: 1em 0 0 3em;
+            margin-left: 6em;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-md-push{
+            left:50%;;
+        }
+        .col-md-pull{
+            right: 50%;
+        }
+    }
+    .project{
+
+        .col-md-push{
+            left:50%;;
+        }
+        .col-md-pull{
+            right: 50%;
+        }
+    }
+}
+
+
+/*Tipografia para mobiles small to L*/
+@media (max-width: 399px) and (min-width: 300px){
+    .works-description,.design-description,.develop-description{
+ 
+        h3{
+            @include mobile-s-h;
+        }
+        p{
+            @include mobile-s-p;
+        }
+    }
+}
+
+/*Tipografia para Mobile small*/
+@media (max-width: 767px) and (min-width:400px ){
+    .works-description,.design-description,.develop-description{
+        h3{
+            @include mobile-m-l-h;
+        }
+        p{
+            @include mobile-m-l-p
+        }
+    }
+}
+   /*Tablets*/
+@media  (min-width:768px) and (max-width: 991px){
+    .works-description,.design-description,.develop-description{
+        h3{
+            @include tablet-h;
+        }
+        p{
+            @include tablet-p;
+        }
+    }
+}
+   /*Escritorio*/
+@include media(desktop-s){
+    .works-description,.design-description,.develop-description{
+        h3{
+            @include desktop-h;
+        }
+
+        p{
+            @include desktop-p;
+        }
+    }
+}
+

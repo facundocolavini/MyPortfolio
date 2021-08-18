@@ -1,0 +1,66 @@
+.contact-links{
+    background:$background-page;
+}
+
+/*Col de enlaces*/
+.links{
+    /*---Responsive----*/
+    @include media(desktop-s){
+        text-align: left;
+    }
+    padding: 25px;
+    h3{
+        color:$color-h-footer;
+    
+    }
+    &__nav{
+        list-style: none;
+        margin:5px;
+        padding: 0;
+        li{
+            padding: 5px;
+           
+            a{
+                color:$color-h-footer;
+                text-decoration: none;
+            }
+        }
+    }
+    a:hover{
+        color:$color-btn-f;
+    }
+}
+
+/*Col de contacto*/
+.contact{
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    @include media(desktop-s){
+        text-align: right;
+    }
+    h3{
+        padding: 5px;
+        color:$color-h-footer;
+        text-align: center;
+        margin-bottom: 10px;
+            /*---Responsive----*/
+        @include media(desktop-s){
+            text-align: right;
+        }
+    }
+    
+    
+    .contact__button{
+       @include Button-Contact;
+    }
+    &__button:hover{
+        background-color:$color-btn-hover;
+        color:rgba(0, 0, 0, 0.877);
+        text-shadow: none;
+        outline:none;
+        
+    }
+}
+
+

@@ -28,7 +28,7 @@
 
 # Herramientas implementadas 
 
-  ### Bootstrap 4.5 
+  ### Bootstrap 5.1.0v 
 
   ### JavaScript 
 
